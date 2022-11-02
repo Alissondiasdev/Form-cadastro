@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="box">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Cadastro de cliente</legend>
+                <div class="inputbox">
+                    <input class="inputuser" type="text" name="nome" id="nome" required>
+                    <label class="labelinput" id="nome_completo" for="nome">Nome completo</label>
+
+                    <br><br>
+                </div>
+                <div class="inputbox">
+                    <input class="inputuser" type="email" name="email" id="email" required>
+                    <label class="labelinput" for="email">Email</label>
+                    <br><br>
+                    
+                    
+                </div>
+                <div class="inputbox">
+                    <input class="inputuser" type="tel" name="telefone" id="telefone" required>
+                    <label class="labelinput" for="telefone">Telefone</label>
+
+                    <br>
+                </div>
+                <p>Sexo:</p>
+                <input type="radio" name="genero" value="feminino" required>
+                <label  for="feminino">Feminino</label>
+                <br>
+                <input type="radio" name="genero" value="masculino" required>
+                <label  for="masculino">Masculino</label>
+                <br>
+                <input type="radio" name="genero" value="outros" required>
+                <label  for="outros">Outros</label>
+                <br><br>
+                <div >
+                    <label for="data_nascimento">Data de nascimento:</label>
+                    <input  type="date" name="data_nascimento" id="data_nascimento" required>
+                    <br><br>
+                    
+                </div>
+                <div class="inputbox">
+                    <input class="inputuser" type="text" name="cidade" id="cidade" required>
+                    <label class="labelinput" for="cidade">Cidade</label>
+                    <br><br>
+                    
+                </div>
+                <div class="inputbox">
+                    <input class="inputuser" type="text" name="estado" id="estado" required>
+                    <label class="labelinput" for="estado">Estado</label>
+                    <br><br>
+                    
+                </div>
+                <div class="inputbox">
+                    <input class="inputuser" type="text" name="endereco" id="endereco" required>
+                    <label class="labelinput" for="endereco">Endereço</label>
+                    <br><br>
+                    
+                    
+                </div>
+                
+                
+                
+            </fieldset>
+        </form>
+        <span class="enviado" id="enviar">Cadastro realizado com sucesso!</span>
+        <span class="enviado1" id="dv">Preencha todos os campos.</span>
+        <input onclick="acao()" id="submit" type="submit" name="submit">
+    </div>
+    <script src="funcao.js"></script>
+</body>
+</html>
